@@ -61,6 +61,7 @@ import java.util.List;
 @SpringBootApplication
 public class MovieBookingSystemApplication {
 
+
 	public static void main(String[] args)
 	{
 		ApplicationContext ctx = SpringApplication.run(MovieBookingSystemApplication.class, args);
