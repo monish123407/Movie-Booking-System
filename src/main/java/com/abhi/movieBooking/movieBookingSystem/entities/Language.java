@@ -10,8 +10,11 @@ public class Language {
     @Column(length = 20,nullable = false,unique = true)
     private String languageName;
 
-    public Language(int languageId, String languageName) {
-        this.languageId = languageId;
+    public Language() {
+    }
+
+    public Language(String languageName) {
+        //this.languageId = languageId;
         this.languageName = languageName;
     }
 
