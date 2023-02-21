@@ -23,19 +23,19 @@ public class MovieBookingSystemApplication {
 		System.out.println("Hello Spring Boot !!! ");
 		MovieService movieService=ctx.getBean(MovieService.class);
 
-		Movie movie=new Movie();
-		movie.setMovieDescription("Good Movie");
-		movie.setMovieName("Dhoom");
-		movie.setDuration(120);
-		movie.setCoverPhotoUrl("Cover Photo Url");
-		movie.setReleaseDate(LocalDateTime.of(2020,07,10,0,0,0));
-		movie.setTrailerUrl("Trailer Url");
-		StatusDao statusDao=ctx.getBean(StatusDao.class);
-		Status status=new Status();
-		status.setStatusName("Cazz");
-		statusDao.save(status);
-		movie.setStatus(status);
-		movieService.acceptMovieDetails(movie);
+//		Movie movie=new Movie();
+//		movie.setMovieDescription("Good Movie");
+//		movie.setMovieName("Dhoom");
+//		movie.setDuration(120);
+//		movie.setCoverPhotoUrl("Cover Photo Url");
+//		movie.setReleaseDate(LocalDateTime.of(2020,07,10,0,0,0));
+//		movie.setTrailerUrl("Trailer Url");
+//		StatusDao statusDao=ctx.getBean(StatusDao.class);
+//		Status status=new Status();
+//		status.setStatusName("Cazz");
+//		statusDao.save(status);
+//		movie.setStatus(status);
+//		movieService.acceptMovieDetails(movie);
 	}
 
 }

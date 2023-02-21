@@ -17,6 +17,7 @@ public class MovieServiceImpl implements MovieService
 
     @Override
     public Movie acceptMovieDetails(Movie movie) {
+
         return movieDao.save(movie);
     }
 
@@ -71,6 +72,7 @@ public class MovieServiceImpl implements MovieService
 
     @Override
     public List<Movie> getAllMoviesDetails() {
+
         return movieDao.findAll();
     }
 }
